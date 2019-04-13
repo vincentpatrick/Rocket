@@ -34,7 +34,7 @@ public class Meteor
         Y = 0;
 
         //Console.WriteLine("message");
-        const int SPEED = 16;
+        const int SPEED = 25;
         MainColor = Color.RandomRGB(200);
 
         //get a point for Meteor

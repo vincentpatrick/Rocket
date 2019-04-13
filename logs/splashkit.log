@@ -2316,3 +2316,23 @@
 2019-04-13 12:26:53,062 WARNING: Error trying to draw bitmap: passed in bmp is an invalid bitmap pointer.
 2019-04-13 12:26:53,079 WARNING: Error trying to draw bitmap: passed in bmp is an invalid bitmap pointer.
 2019-04-13 12:26:53,196 WARNING: Error trying to draw bitmap: passed in bmp is an invalid bitmap pointer.
+2019-04-13 14:36:33,739 WARNING: Attempting to clear an invalid window!
+2019-04-13 14:36:33,739 WARNING: Attempting to draw to a surface that does not exist.
+2019-04-13 14:36:33,739 WARNING: Attempting to draw to a surface that does not exist.
+2019-04-13 14:36:33,740 WARNING: Attempting to draw to a surface that does not exist.
+2019-04-13 14:37:35,387 WARNING: Attempting to clear an invalid window!
+2019-04-13 14:37:35,387 WARNING: Attempting to draw to a surface that does not exist.
+2019-04-13 14:37:35,387 WARNING: Attempting to draw to a surface that does not exist.
+2019-04-13 14:37:35,388 WARNING: Attempting to draw to a surface that does not exist.
+2019-04-13 14:38:12,283 WARNING: Attempting to clear an invalid window!
+2019-04-13 14:38:12,283 WARNING: Attempting to draw to a surface that does not exist.
+2019-04-13 14:38:12,283 WARNING: Attempting to draw to a surface that does not exist.
+2019-04-13 14:38:12,285 WARNING: Attempting to draw to a surface that does not exist.
+2019-04-13 14:46:14,109 WARNING: Attempting to clear an invalid window!
+2019-04-13 14:46:14,109 WARNING: Attempting to draw to a surface that does not exist.
+2019-04-13 14:46:14,109 WARNING: Attempting to draw to a surface that does not exist.
+2019-04-13 14:46:14,110 WARNING: Attempting to draw to a surface that does not exist.
+2019-04-13 14:55:31,518 WARNING: Attempting to clear an invalid window!
+2019-04-13 14:55:31,518 WARNING: Attempting to draw to a surface that does not exist.
+2019-04-13 14:55:31,519 WARNING: Attempting to draw to a surface that does not exist.
+2019-04-13 14:55:31,519 WARNING: Attempting to draw to a surface that does not exist.

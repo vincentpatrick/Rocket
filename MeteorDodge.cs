@@ -7,6 +7,7 @@ public class MeteorDodge
     private Player _player;
     private Window _gameWindow;
     private Meteor _TestMeteor;
+    public int Timer = 0;
     public bool Quit
     {
         //ASK PLAYER IF THEY'VE QUIT, RETURNING ANSWER IT GETS FROM PLAYER
@@ -54,12 +55,9 @@ public class MeteorDodge
             Meteor Meteor1 = new Meteor(_gameWindow, _player);
         }
          _TestMeteor.update();
-        
-        
-        // if(SplashKit.Rnd() < 0.5)
-        // {
-        //     _Meteors.Add(RandomMeteor());
-        // }
+         
+
+        CheckHealth();
         
     }
 
@@ -67,6 +65,20 @@ public class MeteorDodge
     {
         Meteor Meteor1 = new Meteor(_gameWindow, _player);
         return Meteor1;
+    }
+
+    public void CheckHealth()
+    {
+        if(_player.Health == 0)
+        {
+            uint _score;
+            _gameWindow.DrawText("YOU ARE DEAD",  Color.Red, "Bold", 10000000, 400, 300);
+            _score=SplashKit.CurrentTicks();
+             _gameWindow.DrawText(string.Format("Score: {0}", _score),  Color.Black, "Bold", 5000, 400, 200);
+            _gameWindow.Refresh(60);
+            SplashKit.Delay(3000);
+            _gameWindow.Close();
+        }
     }
 }
     
