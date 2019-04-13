@@ -31,12 +31,13 @@ public class MeteorDodge
     public void Draw()
     {
         _gameWindow.Clear(Color.LightBlue);
+        
         _TestMeteor.Draw();
         _player.Draw();
+        _gameWindow.DrawText(string.Format("Health: {0}", _player.Health),  Color.Black, "Bold", 5000, 0, 0);
         
         _gameWindow.Refresh(60);
 
-        
     }
     public void Update()
     {
@@ -44,6 +45,7 @@ public class MeteorDodge
         if (_player.CollidedWith(_TestMeteor) == true)
         {
             _TestMeteor = RandomMeteor(_player);
+            _player.HealthReduce();
         }
  
         if (_TestMeteor.IsOffscreen(_gameWindow) == true)

@@ -8,16 +8,15 @@ public class Program
         Window gameWindow = new Window("Game Window",800, 600);
         Player Player1 = new Player(gameWindow);
         MeteorDodge Dodge1 =new MeteorDodge(gameWindow, Player1);
+       // string healthFormat = string.Format("Health: ", Player1.Health); 
+
+        
         while(!gameWindow.CloseRequested)
         {
             SplashKit.ProcessEvents();
-
-            
             Dodge1.HandleInput();
             Dodge1.Update();
             Dodge1.Draw();
-
-            
         } 
         gameWindow.Close();
     }

@@ -6,7 +6,8 @@ public class Player
     public double X{get; private set;}
     public double Y{get; private set;}
     public bool Quit{get; private set;}
-
+    
+    public int Health = 5;
     private Window _gameWindow; 
     public int Width
     {
@@ -32,6 +33,10 @@ public class Player
         
     }
 
+    public void HealthReduce()
+    {
+        this.Health+=-1;
+    }
 
     public void Draw()
     {
@@ -96,6 +101,5 @@ public class Player
         }
     
     }
-
-
+    
 }
